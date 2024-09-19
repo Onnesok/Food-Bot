@@ -1,6 +1,6 @@
 # 🍔 Food Bot for Robu Humanoid Robot
 
-Food Bot is an intelligent ordering system designed to be integrated with the Robu humanoid robot. This project enhances the dining experience by allowing users to order food through a seamless and interactive interface.
+Food Bot is a flutter based bluetooth app which connects to Humanoid food serving robot for ``table `` and ``stop position`` instruction... Data of list can be saved and on tap it will go on action. Table list can be added or deleted per user requirement from the UI.
 
 ## Screenshots
 
