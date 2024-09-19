@@ -1,16 +1,33 @@
-# food_bot
+# 🍔 Food Bot for Robu Humanoid Robot
 
-Food bot for robu humanoid robot
+Food Bot is an intelligent ordering system designed to be integrated with the Robu humanoid robot. This project enhances the dining experience by allowing users to order food through a seamless and interactive interface.
 
-## Getting Started
+## Screenshots
 
-This project is a starting point for a Flutter application.
+| Main Menu | Food Selection | Order Confirmation |
+|-----------|----------------|--------------------|
+| ![Main Menu](https://github.com/Onnesok/Food-Bot/blob/main/assets/github/p1.jpg) | ![Food Selection](https://github.com/Onnesok/Food-Bot/blob/main/assets/github/p2.jpg) | ![Order Confirmation](https://github.com/Onnesok/Food-Bot/blob/main/assets/github/p3.jpg) |
 
-A few resources to get you started if this is your first Flutter project:
+## Features
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+- Table No and stop position of the robot.
+- Bluetooth accessiblity..
+- Chat option.
+- Pair capablity.
+- Paired device section.
+- Auto pin option.
+- Terminal like UI.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Installation
+
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/Onnesok/Food-Bot.git
+   cd Food-Bot
+
+## Follow Me
+
+[![Follow](https://img.shields.io/github/followers/Onnesok?label=Follow&style=social)](https://github.com/Onnesok)
+
+
+Happy Coding.....🤖
