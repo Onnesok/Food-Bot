@@ -44,6 +44,7 @@ dependencies:
   flutter_speech: ^2.0.0
   fluttertoast: ^8.2.8
   flutter_launcher_icons: ^0.13.1
+  protobuf: ^2.1.0
 
 dev_dependencies:
   flutter_test:
