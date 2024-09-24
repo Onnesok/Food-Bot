@@ -6,7 +6,7 @@ Food Bot is a flutter based bluetooth app which connects to Humanoid food servin
 
 | Table Add Screen | Screen2 | Terminal/chat |
 |-----------|----------------|--------------------|
-| ![Main Menu](https://github.com/Onnesok/Food-Bot/blob/main/assets/github/p1.jpg) | ![Food Selection](https://github.com/Onnesok/Food-Bot/blob/main/assets/github/p2.jpg) | ![Order Confirmation](https://github.com/Onnesok/Food-Bot/blob/main/assets/github/p3.jpg) |
+| ![Table Add Screen](https://github.com/Onnesok/Food-Bot/blob/main/assets/github/p1.jpg) | ![Screen2](https://github.com/Onnesok/Food-Bot/blob/main/assets/github/p2.jpg) | ![Terminal/chat](https://github.com/Onnesok/Food-Bot/blob/main/assets/github/p3.jpg) |
 
 ## Features
 
