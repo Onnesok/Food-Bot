@@ -1,0 +1,2 @@
+D:/food_bot/android/app/.cxx/RelWithDebInfo/2am1k2e5/x86_64/CMakeFiles/edit_cache.dir
+D:/food_bot/android/app/.cxx/RelWithDebInfo/2am1k2e5/x86_64/CMakeFiles/rebuild_cache.dir

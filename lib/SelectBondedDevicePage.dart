@@ -51,7 +51,7 @@ class _SelectBondedDevicePage extends State<SelectBondedDevicePage> {
     }
 
     // Setup a list of the bonded devices
-    FlutterBluetoothSerial.getBondedDevices()
+    FlutterBluetoothSerial.instance.getBondedDevices()
         .then((List<BluetoothDevice> bondedDevices) {
       setState(() {
         devices = bondedDevices
@@ -78,7 +78,7 @@ class _SelectBondedDevicePage extends State<SelectBondedDevicePage> {
 
   void _startDiscovery() {
     _discoveryStreamSubscription =
-        FlutterBluetoothSerial.startDiscovery().listen((r) {
+        FlutterBluetoothSerial.instance.startDiscovery().listen((r) {
       setState(() {
         Iterator i = devices.iterator;
         while (i.moveNext()) {
