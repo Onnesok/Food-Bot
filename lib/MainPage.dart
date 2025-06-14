@@ -74,7 +74,7 @@ class _MainPage extends State<MainPage> {
 
   @override
   void dispose() {
-    FlutterBluetoothSerial.instance.setPairingRequestHandler(null);
+    FlutterBluetoothSerial.setPairingRequestHandler(null);
     _discoverableTimeoutTimer?.cancel();
     super.dispose();
   }
@@ -160,8 +160,7 @@ class _MainPage extends State<MainPage> {
                     icon: const Icon(Icons.refresh),
                     onPressed: () async {
                       print('Discoverable requested');
-                      final int timeout = (await FlutterBluetoothSerial.instance
-                          .requestDiscoverable(60))!;
+                      final int timeout = (await FlutterBluetoothSerial.requestDiscoverable(60))!;
                       if (timeout < 0) {
                         print('Discoverable mode denied');
                       } else {
@@ -175,7 +174,7 @@ class _MainPage extends State<MainPage> {
                             Timer.periodic(Duration(seconds: 1), (Timer timer) {
                           setState(() {
                             if (_discoverableTimeoutSecondsLeft < 0) {
-                              FlutterBluetoothSerial.instance.isDiscoverable
+                              FlutterBluetoothSerial.isDiscoverable
                                   .then((isDiscoverable) {
                                 if (isDiscoverable ?? false) {
                                   print(
@@ -206,7 +205,7 @@ class _MainPage extends State<MainPage> {
                   _autoAcceptPairingRequests = value;
                 });
                 if (value) {
-                  FlutterBluetoothSerial.instance.setPairingRequestHandler(
+                  FlutterBluetoothSerial.setPairingRequestHandler(
                       (BluetoothPairingRequest request) {
                     print("Trying to auto-pair with Pin 1234");
                     if (request.pairingVariant == PairingVariant.Pin) {
@@ -215,7 +214,7 @@ class _MainPage extends State<MainPage> {
                     return Future.value(null);
                   });
                 } else {
-                  FlutterBluetoothSerial.instance
+                  FlutterBluetoothSerial
                       .setPairingRequestHandler(null);
                 }
               },

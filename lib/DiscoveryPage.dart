@@ -44,7 +44,7 @@ class _DiscoveryPage extends State<DiscoveryPage> {
 
   void _startDiscovery() {
     _streamSubscription =
-        FlutterBluetoothSerial.instance.startDiscovery().listen((r) {
+        FlutterBluetoothSerial.startDiscovery().listen((r) {
       setState(() {
         final existingIndex = results.indexWhere(
             (element) => element.device.address == r.device.address);
@@ -110,16 +110,14 @@ class _DiscoveryPage extends State<DiscoveryPage> {
               try {
                 bool bonded = false;
                 if (device.isBonded) {
-                  print('Unbonding from ${device.address}...');
-                  await FlutterBluetoothSerial.instance
-                      .removeDeviceBondWithAddress(address);
-                  print('Unbonding from ${device.address} has succed');
+                  print('Unbonding from [38;5;130m${device.address}[0m...');
+                  await FlutterBluetoothSerial.removeDeviceBondWithAddress(address);
+                  print('Unbonding from [38;5;130m${device.address}[0m has succed');
                 } else {
-                  print('Bonding with ${device.address}...');
-                  bonded = (await FlutterBluetoothSerial.instance
-                      .bondDeviceAtAddress(address))!;
+                  print('Bonding with [38;5;130m${device.address}[0m...');
+                  bonded = (await FlutterBluetoothSerial.bondDeviceAtAddress(address))!;
                   print(
-                      'Bonding with ${device.address} has ${bonded ? 'succed' : 'failed'}.');
+                      'Bonding with [38;5;130m${device.address}[0m has ${bonded ? 'succed' : 'failed'}.');
                 }
                 setState(() {
                   results[results.indexOf(result)] = BluetoothDiscoveryResult(
